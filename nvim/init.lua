@@ -1,3 +1,5 @@
+-- this init.lua requires VimPlug (https://github.com/junegunn/vim-plug)
+
 local Plug = vim.fn["plug#"]
 
 -- hybrid line numbers ftw!
