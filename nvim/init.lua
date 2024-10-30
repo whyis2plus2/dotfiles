@@ -17,9 +17,6 @@ Plug("tpope/vim-sensible")
 -- tokyonight theme
 Plug("folke/tokyonight.nvim")
 
--- NERDTree
-Plug("preservim/nerdtree")
-
 vim.call("plug#end")
 
 -- set the theme
