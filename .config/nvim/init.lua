@@ -20,7 +20,7 @@ Plug("folke/tokyonight.nvim")
 vim.call("plug#end")
 
 -- set the theme
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[silent colorscheme tokyonight]]
 
 ---------------------
 ------ KEYBINDS -----
