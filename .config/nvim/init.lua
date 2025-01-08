@@ -29,11 +29,7 @@ vim.cmd[[silent colorscheme tokyonight]]
 -- unbind u key (having it be undo is annoying)
 vim.api.nvim_set_keymap("n", "u", "<NOP>", { noremap = true, silent = true })
 
--- ctrl+w then ctrl+e to show buffers
--- the ":buffer<Space>" lets me type in a buffer number
--- and press enter to change buffers,
--- so that i dont have to type out ":buffer "
-vim.api.nvim_set_keymap("n", "<C-e><C-w>", ":buffers<CR>:buffer<Space>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-w><Space>", ":buffers<CR>:buffer<Space>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n", "<C-e>j", ":bprev<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-e>k", ":bnext<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-w>[", ":bprev<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-w>]", ":bnext<CR>", { noremap = true, silent = true })
